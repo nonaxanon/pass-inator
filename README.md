@@ -25,6 +25,11 @@ A secure, command-line password generator written in Go. Pass-inator generates c
 - No predictable patterns in generated passwords
 - Secure password shuffling algorithm
 
+## Pre-reqs
+1. A machine where you can run go
+2. Go
+3. A monitor
+
 ## Installation
 
 1. Ensure you have Go installed (version 1.16 or higher recommended)
