@@ -133,7 +133,6 @@ func generatePassword(config PasswordConfig) (string, error) {
 	return string(passwordRunes), nil
 }
 
-// readUserInput reads a line of input from the user
 func readUserInput(prompt string) string {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print(prompt)
@@ -141,7 +140,6 @@ func readUserInput(prompt string) string {
 	return strings.TrimSpace(input)
 }
 
-// readYesNo reads a yes/no input from the user
 func readYesNo(prompt string) bool {
 	for {
 		input := strings.ToLower(readUserInput(prompt))
@@ -167,7 +165,6 @@ func main() {
 		length = minPasswordLength
 	}
 
-	// Get character type preferences
 	config := PasswordConfig{
 		Length:          length,
 		UseLowercase:    readYesNo("Include lowercase letters? (y/n): "),
